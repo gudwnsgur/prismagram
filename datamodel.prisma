@@ -1,0 +1,23 @@
+type User {
+  id: ID! @id
+  name: String!
+  LastName : String!
+}
+
+type Post {
+  files : [Files!]!
+}
+
+type Like {
+  user : User!
+  post : Post!
+}
+
+tpye Comment {
+
+}
+
+type File {
+  url : String!
+  psost : Post!
+}
